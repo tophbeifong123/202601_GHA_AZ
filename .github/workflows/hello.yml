@@ -1,9 +1,21 @@
-name: My First Workflow
+name: My Combined Workflow
 
 on: [push]
 
 jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "Building..."
+
+  test:
+    runs-on: ubuntu-latest
+    needs: build # ต้องรอให้ build เสร็จก่อนถึงจะทำ test
+    steps:
+      - run: echo "Testing..."
+
   my-job:
     runs-on: ubuntu-latest
+    needs: test # (ทางเลือก) ถ้าอยากให้รันหลัง test เสร็จ ให้ใส่บรรทัดนี้ครับ
     steps:
       - run: echo "Hello, world!"
