@@ -1,0 +1,25 @@
+{
+  "name": "202601_gha_az",
+  "version": "1.0.0",
+  "description": "* [GEMINI.md](GEMINI.md) * [GitHub Actions Crash Course Jan 2026](github_actions/github_actions_crash_course_Jan_2026.md) * [Azure Fundamentals Jan 2026](azure_fundamentals/azure_fundamentals_course_Jan_2026.md) * Using Marp on GitHub CodeSpace: `marp --server .` * Using Marp on Local: `marp --preview azure_fundamentals/azure_fundamentals_course_Jan_2026.md`",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest" 
+  },
+  
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tophbeifong123/202601_GHA_AZ.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/tophbeifong123/202601_GHA_AZ/issues"
+  },
+  "homepage": "https://github.com/tophbeifong123/202601_GHA_AZ#readme",
+  "devDependencies": {
+    "jest": "^30.2.0"
+  }
+}
