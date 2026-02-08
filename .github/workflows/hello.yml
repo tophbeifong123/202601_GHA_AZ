@@ -1,4 +1,4 @@
-# name: My Combined Workflow
+name: My Combined Workflow
 
 # on: [push]
 
@@ -19,6 +19,8 @@
 #     needs: test # (ทางเลือก) ถ้าอยากให้รันหลัง test เสร็จ ให้ใส่บรรทัดนี้ครับ
 #     steps:
 #       - run: echo "Hello, world!"
+
+on: [push]
 
 jobs:
   test:
